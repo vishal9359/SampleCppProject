@@ -73,3 +73,11 @@ PUBLIC int utilChain(int v) {
     int scaled = utilScale(normed, 3);
     return scaled;
 }
+
+PUBLIC int utilHelperRange(int lo, int hi) {
+    int total = 0;
+    for (int i = lo; i <= hi; ++i) {
+        total += i;
+    }
+    return total;
+}
