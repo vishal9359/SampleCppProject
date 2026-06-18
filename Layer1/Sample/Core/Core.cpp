@@ -170,3 +170,9 @@ PUBLIC int coreMultiCallChain(int a, int b, int c) {
 PROTECTED int coreGetCount() {
     return g_count;  // reads global only -> direction Out
 }
+
+PUBLIC int coreFinalize(int v) {
+    coreReset();
+    g_result = v * 2;
+    return g_result;
+}
