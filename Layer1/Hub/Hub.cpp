@@ -50,3 +50,12 @@ PUBLIC int hubCompute(int a, int b) {
               + ua + uc + ub;
     return total;
 }
+
+PUBLIC int hubDispatch(int code) {
+    switch (code) {
+        case 0:  return 100;
+        case 1:  return 200;
+        case 2:  return 300;
+        default: return -1;
+    }
+}
