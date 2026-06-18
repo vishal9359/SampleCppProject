@@ -15,3 +15,11 @@ PUBLIC int subtract(int a, int b) {
 PROTECTED int computeBoth(int a, int b) {
     return add(a, b) + subtract(a, b);
 }
+
+PUBLIC int divide(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
+    ++g_utilsCounter;
+    return a / b;
+}
