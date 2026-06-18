@@ -235,3 +235,13 @@ PUBLIC int runFlowTests() {
     total += fnLoopNestedIfElse(9);
     return total;
 }
+
+PUBLIC int flowBranchHelper(int x) {
+    if (x > 10) {
+        return x - 10;
+    }
+    if (x < 0) {
+        return -x;
+    }
+    return x;
+}
