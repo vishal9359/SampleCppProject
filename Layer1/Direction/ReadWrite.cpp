@@ -25,3 +25,11 @@ PRIVATE void indirectWrite(int v) {
 PUBLIC int directionAdd(int a, int b) {
     return add(a, b);  // cross-module: tests/direction -> math
 }
+
+PUBLIC int readWriteAccumulate(int n) {
+    int acc = 0;
+    for (int i = 0; i < n; ++i) {
+        acc += i;
+    }
+    return acc;
+}
